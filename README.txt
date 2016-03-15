@@ -51,7 +51,8 @@ since it only need constant time to get or put new element.
 Hashtable is thread safety, while HashMap has a better performance when there is no multi-thread. For the consideration of thread safety
 that if many people access database at the same time, simpleDB use Hashtable.
 
-3. In order to give NUMEQUALTO an average-case runtime of O(log N) or better, there need to add another hashtable for each block to record the count of each distinguish value.
+3. In order to give NUMEQUALTO an average-case runtime of O(log N) or better, there need to add another hashtable for each block to
+record the count of each distinguish value.
 
 In summary, there will be two hashtable for each block recording name_value and value_count. And two hashtable are stored separately in
 two linked list, which are:
